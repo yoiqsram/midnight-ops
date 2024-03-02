@@ -5,3 +5,5 @@ __pycache__/
 data/ml-olympiad-tfugsurabaya-2024
 mlartifacts/
 mlruns/
+
+*submission.csv
