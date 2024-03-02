@@ -2,6 +2,6 @@ venv/
 __pycache__/
 *.pyc
 
-data/
+data/ml-olympiad-tfugsurabaya-2024
 mlartifacts/
 mlruns/
