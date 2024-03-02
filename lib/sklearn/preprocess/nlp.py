@@ -1,3 +1,4 @@
+import nltk
 import numpy as np
 import pandas as pd
 from nltk.corpus import stopwords
@@ -6,6 +7,10 @@ from sklearn.base import TransformerMixin
 from Sastrawi.Stemmer.StemmerFactory import StemmerFactory
 
 from lib.constants import PROJECT_DIR
+
+nltk.download('punkt', quiet=True)
+nltk.download('words', quiet=True)
+nltk.download('stopwords', quiet=True)
 
 
 class TextTokenizer(TransformerMixin):
