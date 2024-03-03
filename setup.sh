@@ -18,7 +18,7 @@ conda config --set env_prompt '({name}) '
 conda env config vars set PYTHONPATH=$PYTHONPATH
 
 kaggle competitions download -c $COMPETITION
-unzip $COMPETITION.zip -d data
+unzip $COMPETITION.zip -d data/$COMPETITION
 rm $COMPETITION.zip
 
 conda deactivate

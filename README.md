@@ -1,5 +1,5 @@
 ## Environment Setup
-Setup for development. Make sure you have installed Anaconda in your system.
+Setup for development in Linux/WSL. Make sure you have installed Anaconda in your system.
 ```bash
 source setup.sh
 ```
@@ -16,6 +16,8 @@ mlflow server --host localhost --port 8080
 ```
 
 Or if you use VS Code or Jupyter Notebook, you could choose set the python interpreter path or kernel from `./venv`.
+
+If you're not using Linux/WSL, follow the command in `setup.sh` and adjust accordingly to your OS.
 
 ## How to Collaborate?
 
