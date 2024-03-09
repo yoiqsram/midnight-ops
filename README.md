@@ -11,7 +11,7 @@ source setup.sh --minimal
 
 To begin developing, run:
 ```bash
-conda activate ./venv
+source venv/bin/activate
 mlflow server --host localhost --port 8080
 ```
 
@@ -33,6 +33,6 @@ If you're not using Linux/WSL, follow the command in `setup.sh` and adjust accor
 2. **Live Share** host will give you the session link.
 3. You could edit, run, and monitor model runs using the host machine.
 
-### Genreal Rules
+### General Rules
 1. Follow the template given in the `notebooks` folder.
 2. Use compatible python packages with `MLFlow` (i.e. `scikit-learn`, `tensorflow`, `pytorch`, etc) and make sure to build model by following their API from preprocess to inference.
