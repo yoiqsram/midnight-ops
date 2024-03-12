@@ -1,12 +1,13 @@
 import numpy as np
 from sklearn.base import BaseEstimator, RegressorMixin, TransformerMixin
+from typing import List
 
 
 class RegressionExtractor(BaseEstimator, TransformerMixin):
     def __init__(self, regressor: RegressorMixin):
         self.regressor = regressor
 
-    def fit(self, X: list[list[str]], y: np.array = None):
+    def fit(self, X: List[List[str]], y: np.array = None):
         self.regressor.fit(X, y)
         return self
 
